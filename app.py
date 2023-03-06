@@ -1,10 +1,7 @@
-# flask-rest boilerplate
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
 
-
-app.route("/")
-def hello():
-    return "Free Tier Limit Exceded!"
-
+@app.route("/")
+def hello_world():
+    return "Free Tier Limit Exceeded"
